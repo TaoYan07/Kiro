@@ -1,0 +1,37 @@
+{
+  "mcpServers": {
+    "knowledge-base": {
+      "command": "python",
+      "args": [
+        "mcp-servers/knowledge-base-server/server.py"
+      ],
+      "env": {
+        "PYTHONPATH": ".",
+        "OPENAI_API_KEY": "${OPENAI_API_KEY}"
+      },
+      "disabled": false,
+      "autoApprove": [
+        "search_knowledge_base",
+        "get_knowledge_stats"
+      ]
+    },
+    "ticketing": {
+      "command": "python",
+      "args": [
+        "mcp-servers/ticketing-server/server.py"
+      ],
+      "env": {
+        "PYTHONPATH": ".",
+        "GITHUB_TOKEN": "${GITHUB_TOKEN}",
+        "JIRA_URL": "${JIRA_URL}",
+        "JIRA_TOKEN": "${JIRA_TOKEN}"
+      },
+      "disabled": false,
+      "autoApprove": [
+        "search_tickets",
+        "get_ticket",
+        "get_ticket_stats"
+      ]
+    }
+  }
+}

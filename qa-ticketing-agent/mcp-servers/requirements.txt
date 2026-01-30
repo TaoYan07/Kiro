@@ -1,0 +1,12 @@
+# MCP Server Python依赖
+mcp>=0.9.0
+
+# 可选：用于实际向量搜索
+# chromadb>=0.4.0
+# openai>=1.0.0
+# sentence-transformers>=2.2.0
+
+# 可选：用于外部集成
+# PyGithub>=2.0.0
+# jira>=3.5.0
+# requests>=2.31.0
